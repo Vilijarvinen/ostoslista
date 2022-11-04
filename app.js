@@ -157,7 +157,6 @@ function tallennusLocalStorageen() {
     
     //Määritellään muuttuja li elementille
     var lapset = document.querySelectorAll('li');
-    var maarat = document.querySelectorAll('select');
     
     //Loop joka käy kaikki li elementit läpi ja lisää ne taulukkoon
     for (var j = 0; j < lapset.length; j++){
@@ -179,6 +178,12 @@ function localStoragesta(){
     //lisätään muuttujassa oleva tieto listaan
     document.getElementById('lista').innerHTML = takas;
     //JSON.parse rikkoo p elementin joka rikkoo toiminnallisuutta
+    //unohdin että yliviivauksen tilanne ei toimi p elementtien kanssa sekoilun jälkeen; tässä korjaan sen osa1. 
+    var pito = [];
+    document.querySelectorAll('p').forEach(pitoon => { 
+        pito.push(pitoon.getAttribute('class'));
+        console.log(pito);
+    });
     //poistetaan rikki menneet p elementit
     document.querySelectorAll('p').forEach(pee => {
         pee.remove();
@@ -190,12 +195,19 @@ function localStoragesta(){
         let b = peet.innerHTML;
         //...tyhjentämällä li elementin sisällön...
         peet.innerHTML = "";
-        a.setAttribute('class', 'eiviiva');
         //...luomalla p elementin li elementin alle...
         peet.appendChild(a);
         //...ja lopuksi lisäämään li:n muuttujaan tallennetun sisällön p elementin sisälle
         a.innerHTML = b;
         //muut tavat, joita yritin käyttää, lisäsivät <p></p> alkuun ja loppuun
+        //unohdin että yliviivauksen tilanne ei toimi p elementtien kanssa sekoilun jälkeen; tässä korjaan sen osa2. 
+        function viivauksenTilanne(){
+            if (pito[0] === null){
+                pito.shift();
+            }
+            a.setAttribute('class', pito.shift());
+        };
+        viivauksenTilanne();
     });
     //palautetaan poisto ominaisuus takaisin tuoduille napeille
     document.querySelectorAll('.pnappi').forEach(pnappi2 => {
