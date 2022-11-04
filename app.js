@@ -177,13 +177,13 @@ function localStoragesta(){
     var takas = JSON.parse(tallennetut);
     //lisätään muuttujassa oleva tieto listaan
     document.getElementById('lista').innerHTML = takas;
-    //JSON.parse rikkoo p elementin joka rikkoo toiminnallisuutta
     //unohdin että yliviivauksen tilanne ei toimi p elementtien kanssa sekoilun jälkeen; tässä korjaan sen osa1. 
     var pito = [];
     document.querySelectorAll('p').forEach(pitoon => { 
         pito.push(pitoon.getAttribute('class'));
         console.log(pito);
     });
+    //JSON.parse rikkoo p elementin joka rikkoo toiminnallisuutta
     //poistetaan rikki menneet p elementit
     document.querySelectorAll('p').forEach(pee => {
         pee.remove();
