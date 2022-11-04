@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ostoslista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="keho">
+    <div id="sisalto">
+        <h1>Vilin ostoslista</h1>
+        <div id="lisaus"><input type="text" id="teksti" class="valahduspiilossa" placeholder="Kirjoita tähän..."><button id="listaan" onclick="listaLisaus()"></button></div>
+        <ul id="lista">
+
+        </ul>
+        <input type="button" id="tallennaLocal" onclick="tallennusLocalStorageen()">
+        <input type="button" id="poistakaikki" onclick="poistaKaikki()">
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>

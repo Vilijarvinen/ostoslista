@@ -1,0 +1,172 @@
+body {
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+#sisalto {
+    background-color: pink;
+    width:fit-content;
+    min-width: 70%;
+    max-width: 85%;
+    margin:0 auto;
+    padding:0.5em;
+    margin-bottom:0.5em;
+    margin-top:0.5em;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    min-height: 80vh;
+    border-radius:10px;
+    font-family: cursive;
+    position: relative;
+}
+
+.eiviiva {
+    text-decoration: none;
+    text-align: left;
+    font-size: 25px;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 0.1em;
+    cursor:pointer;
+}
+
+.viivattu {
+    text-decoration: line-through;
+    text-align: left;
+    font-size: 25px;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 0.1em;
+    cursor:pointer;
+}
+
+h1 {
+    text-align: center;
+    font-family: Brush Script MT, Brush Script Std, cursive !important;
+    font-size: 40px;
+}
+
+p {
+    width:95%;
+    text-align: left;
+    font-size: 25px;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 0.1em;
+}
+
+li {
+    width:95%;
+    border: 2px;
+    border-style: solid;
+    border-color:palevioletred;
+    border-radius: 0.3em;
+    margin: 0.1em;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding-bottom: 3em;
+    padding-top: 4em;
+}
+
+.yv {
+    width:min-content;
+}
+
+.pnappi {
+    cursor:pointer;
+    float:right;
+    background: url(trash.png) no-repeat !important;
+    background-size: cover !important;
+    width: 28.47px;
+    height: 32px;
+    border: none;
+    margin-right: 1em;
+}
+
+.maara {
+    float:right;
+    width: 45px;
+    height: 32px;
+    border: none;
+    margin-right: 1em;
+    border-radius: 0.5em;
+}
+    
+#teksti {
+    width: 75%;
+    height: 100%;
+    position:inherit;
+    top:0;
+    left:15%;
+}
+
+#listaan {
+    position:inherit;
+    left:92%;
+    padding-left: 0.1em;
+    width:50px;
+    height:100%;
+    border:none;
+    background-color: pink;
+    background: url(plus.png) no-repeat !important;
+    background-size: cover !important;
+}
+
+#lisaus {
+    height:50px;
+    width: 90%;
+    position: absolute;
+}
+
+#poistakaikki {
+    cursor:pointer;
+    background: url(trashall.png) no-repeat !important;
+    background-size: cover !important;
+    width: 134.99px;
+    height: 50px;
+    border:none;
+    margin-bottom: 0.2em !important;
+    right: 2% !important;
+    position:absolute !important;
+    bottom: 0 !important;
+}
+
+.valahduspiilossa {
+    border:solid;
+    border-color: transparent;
+    border-radius: 0.3em;
+}
+
+.valahdus {
+    border:solid;
+    border-color: red;
+    border-radius: 0.3em;
+}
+
+input[type="text"]
+{
+    font-family: cursive;
+    font-size:25px;
+}
+
+#tallennaLocal {
+    cursor:pointer;
+    background: url(tallennakaikki.png) no-repeat !important;
+    background-size: cover !important;
+    width: 134.99px;
+    height: 50px;
+    border:none;
+    margin-bottom: 0.2em !important;
+    left: 2% !important;
+    position:absolute !important;
+    bottom: 0 !important;
+}
