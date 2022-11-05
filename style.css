@@ -19,7 +19,7 @@ body {
     overflow-y:hidden;
     min-height: 80vh;
     border-radius:10px;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif !important;
     position: relative;
 }
 
@@ -154,7 +154,7 @@ ul {
 
 input[type="text"]
 {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif !important;
     font-size:25px;
 }
 
