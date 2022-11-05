@@ -19,7 +19,7 @@ body {
     overflow-y:hidden;
     min-height: 80vh;
     border-radius:10px;
-    font-family: cursive;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     position: relative;
 }
 
@@ -154,7 +154,7 @@ ul {
 
 input[type="text"]
 {
-    font-family: cursive;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;;
     font-size:25px;
 }
 
